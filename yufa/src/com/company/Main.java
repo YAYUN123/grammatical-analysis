@@ -55,7 +55,8 @@ public class Main {
                 }
             }
         }catch (NullPointerException e){
-            e.toString();
+            System.out.println("Matching failure.");
+            System.exit(0);
         }
     }
 }
