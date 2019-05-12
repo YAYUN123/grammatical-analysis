@@ -11,6 +11,7 @@ public class SearchList {
     public String[] arr2 = {"E", "e", "T", "t", "F"};
     public String[] arr3 = {"a", "+", "*", "(", ")", "#"};
     public ArrayList findlist;
+    //创建一个查询表
     public ArrayList createList() {
         maplist = new ArrayList();
         for (int i = 0; i < 5; i++) {
@@ -24,6 +25,7 @@ public class SearchList {
         }
         return maplist;
     }
+    //查找对应的表达式
     public String findWord(String word, String input_word, ArrayList list) {
         String push_in = null;
         findlist = list;

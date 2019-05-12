@@ -8,8 +8,10 @@ public class CharStack{
         st.pop();
         print_Stack(st);
     }
+
     public void new_push(String arr, Stack st)
     {
+        //把表达式倒序逐个入栈
         for(int i = arr.length() - 1; i >= 0; i--) {
             st.push(String.valueOf(arr.charAt(i)));
         }
@@ -19,6 +21,7 @@ public class CharStack{
     {
         return String.valueOf(st.peek());
     }
+    //打印栈中的元素
     public void print_Stack(Stack st)
     {
         for (Object x : st) {

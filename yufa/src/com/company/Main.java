@@ -20,6 +20,7 @@ public class Main {
         words = input.nextLine();
         searchList = new SearchList();
         list = searchList.createList();
+        //对输入的字符串进行逐项匹配
         for (int i = 0; i < words.length(); i++)
         {
             sign = true;
@@ -32,6 +33,7 @@ public class Main {
         }
         System.out.println("The match is successful.");
     }
+    //特殊情况特殊处理
     public static void way(String head, int i)
     {
         try{
